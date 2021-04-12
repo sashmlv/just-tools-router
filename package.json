@@ -1,0 +1,37 @@
+{
+  "name": "just-tools-router",
+  "version": "0.0.1",
+  "description": "router",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist",
+    "build": "webpack -c webpack.js",
+    "dev": "webpack -w -c webpack.js",
+    "prepare": "npm run build",
+    "test": "jasmine --config=jasmine.json --reporter=jasmine-console-reporter",
+    "doc": "jsdoc -r src -d dist && http-server dist"
+  },
+  "keywords": [
+    "router"
+  ],
+  "author": "sashmlv",
+  "license": "UNLICENSE",
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-radar": "^0.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-sonarjs": "^0.6.0",
+    "eslint-plugin-svelte3": "^3.1.2",
+    "eslint-plugin-unicorn": "^29.0.0",
+    "eslint-plugin-xss": "^0.1.10",
+    "eslint-webpack-plugin": "^2.5.3",
+    "http-server": "^0.12.3",
+    "jasmine": "^3.7.0",
+    "jasmine-console-reporter": "^3.1.0",
+    "jsdoc": "^3.6.6",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
